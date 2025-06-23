@@ -31,7 +31,7 @@ const Menu = () => {
   ];
 
   return (
-    <section className="bg-[#fa559a] mt-10 w-full min-h-screen flex items-center justify-center px-4 py-12">
+    <section className="bg-[#fa559a] w-full min-h-screen flex items-center justify-center px-4 py-12">
       <div className="flex flex-col md:flex-row w-full max-w-7xl h-full">
         <div className="bg-white w-full md:w-1/2 h-[100vh] py-10 px-6 md:px-12 flex flex-col justify-start -mt-16">
           <h2
