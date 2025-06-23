@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bg-[#dedcdc] w-full mt-10 px-4 py-4 md:px-8 lg:px-16 shadow-sm z-50 relative"
+      className="bg-transparent w-full px-4 py-6 md:px-8 lg:px-16 z-50 relative"
       style={{ fontFamily: 'sofia sans' }}
     >
       <div className="flex items-center justify-between">
