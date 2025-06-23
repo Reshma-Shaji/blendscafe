@@ -1,3 +1,6 @@
+'use client';
+import Image from 'next/image';
+
 const Menu = () => {
   const menuItems = [
     {
@@ -58,10 +61,10 @@ const Menu = () => {
         </div>
 
         <div className="w-full md:w-1/2 flex items-center justify-center overflow-hidden mt-[130px]">
-          <img
+          <Image
             src="/menu.webp"
             alt="menu image"
-            width={900}
+            width={300}
             height={400}
             className="w-full max-w-[400px] h-auto object-contain"
           />

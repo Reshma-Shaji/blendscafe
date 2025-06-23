@@ -1,3 +1,6 @@
+'use client';
+import Image from 'next/image';
+
 const Reserve = () => {
   return (
     <section className="w-full h-screen bg-[#fa559a] flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 gap-8">
@@ -22,8 +25,10 @@ const Reserve = () => {
       </div>
 
       <div className="w-full md:w-1/2 h-[100vh] flex justify-between items-end ml-[40px]">
-        <img
+        <Image
           src="image.webp"
+          width={300}
+          height={400}
           alt="Cafe"
           className="w-full max-w-[600px] rounded-lg shadow-lg"
         />

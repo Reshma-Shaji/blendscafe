@@ -1,7 +1,7 @@
 import Navbar from '@/Components/Navbar';
 import Hero from './(section)/Hero';
 import BigHand from './(section)/BigHand';
-import Slide from './(section)/Slide';
+// import Slide from './(section)/Slide';
 import Explore from './(section)/Explore';
 import Menu from './(section)/Menu';
 import Reserve from './(section)/Reserve';
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <Hero />
         <BigHand />
-        <Slide />
+        {/* <Slide /> */}
         <Explore />
         <Menu />
         <Reserve />

@@ -1,3 +1,6 @@
+'use client';
+import Image from 'next/image';
+
 const BigHand = () => {
   return (
     <section className="relative mt-16 w-full h-screen bg-white overflow-hidden flex items-center justify-center px-4 md:px-16">
@@ -39,7 +42,7 @@ const BigHand = () => {
         </div>
 
         <div className="w-full md:w-auto max-w-[800px] md:max-w-[600px] lg:max-w-[950px] -mt-[300px]">
-          <img
+          <Image
             src="/hand.webp"
             alt="Croissant"
             width={900}

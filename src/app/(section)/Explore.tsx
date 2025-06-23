@@ -1,3 +1,6 @@
+'use client';
+import Image from 'next/image';
+
 const Explore = () => {
   const menuItems = [
     { name: 'BREAKFAST', img: '/image1.webp' },
@@ -22,9 +25,11 @@ const Explore = () => {
             key={index}
             className="flex flex-col items-center justify-center"
           >
-            <img
+            <Image
               src={item.img}
               alt={item.name}
+              width={300}
+              height={400}
               className="w-[300px] md:w-[400px] h-auto object-contain rounded-md shadow-xl"
             />
             <p

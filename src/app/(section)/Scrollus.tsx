@@ -1,3 +1,5 @@
+'use client';
+import Image from 'next/image';
 import React from 'react';
 
 const Scrollus = () => {
@@ -13,8 +15,10 @@ const Scrollus = () => {
       <div className="grid grid-rows-2 gap-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative w-full h-[300px] overflow-hidden rounded-lg shadow-md">
-            <img
+            <Image
               src="image.webp"
+              width={300}
+              height={400}
               alt="Image 1"
               className="w-[500px] h-[400px] object-cover"
             />
@@ -24,8 +28,10 @@ const Scrollus = () => {
           </div>
 
           <div className="w-full h-[300px] overflow-hidden rounded-lg shadow-md">
-            <img
+            <Image
               src="1.webp"
+              width={300}
+              height={400}
               alt="Image 2"
               className="w-[500px] h-[400px] object-cover"
             />
@@ -44,13 +50,21 @@ const Scrollus = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-[#fa559a] w-full h-[300px] rounded-lg flex flex-col items-center justify-center text-white text-center">
-            <img className="h-6 w-6 mb-2" src="insta.jpg" alt="Instagram" />
+            <Image
+              className="h-6 w-6 mb-2"
+              width={300}
+              height={400}
+              src="insta.jpg"
+              alt="Instagram"
+            />
             <h1 className="text-lg font-semibold">@LOREMIPSUM</h1>
           </div>
 
           <div className="relative w-full h-[300px] overflow-hidden rounded-lg shadow-md">
-            <img
+            <Image
               src="1 (1).webp"
+              width={300}
+              height={400}
               alt="Image 3"
               className="w-[500px] h-[400px] object-cover"
             />
@@ -60,8 +74,10 @@ const Scrollus = () => {
           </div>
 
           <div className="relative w-full h-[300px] overflow-hidden rounded-lg shadow-md">
-            <img
+            <Image
               src="image.webp"
+              width={300}
+              height={400}
               alt="Image 4"
               className="w-[500px] h-[400px] object-cover"
             />

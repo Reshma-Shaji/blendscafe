@@ -48,8 +48,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center mb-6">
           <Image
             src="/logo.webp"
-            width={100}
-            height={40}
+            width={300}
+            height={400}
             alt="logo"
             className="h-auto w-[100px]"
           />

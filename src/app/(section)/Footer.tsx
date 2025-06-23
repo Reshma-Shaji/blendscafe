@@ -1,3 +1,5 @@
+'use client';
+import Image from 'next/image';
 import React from 'react';
 
 const Footer = () => {
@@ -7,7 +9,13 @@ const Footer = () => {
       style={{ fontFamily: 'sans-serif' }}
     >
       <div className="space-y-10 -mt-[20px]">
-        <img src="logo.webp" alt="Logo" className="w-36 mb-4" />
+        <Image
+          src="logo.webp"
+          width={300}
+          height={400}
+          alt="Logo"
+          className="w-36 mb-4"
+        />
         <h2 className="font-normal text-lg mt-28">CONTACT</h2>
         <h2 className="text-xl">
           69-71 London Rd, Stockton
