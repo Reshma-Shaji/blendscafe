@@ -1,4 +1,5 @@
 'use client';
+import { HomeContant } from '@/lib/Contants';
 import Image from 'next/image';
 
 const BigHand = () => {
@@ -18,26 +19,9 @@ const BigHand = () => {
       </h1>
 
       <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-between mt-[680px] gap-10">
-        <div className="w-full md:w-1/2 text-black text-lg font-bold uppercase leading-relaxed space-y-7">
+        <div className="w-full mb-[250px] md:w-1/2 text-black text-lg font-bold uppercase leading-relaxed space-y-7 max-w-[260px]">
           <p style={{ fontFamily: 'sofia sans' }}>
-            LOREM IPSUM DOLOR SIT <br /> AMET, CONSECTETUR <br /> ADIPISCING
-            ELIT. NULLA
-            <br />
-            FACILISI. PELLENTESQUE <br /> HABITANT MORBI TRISTIQUE <br />
-            SENECTUS ET NETUS ET
-            <br />
-            MALESUADA FAMES AC <br />
-            TURPIS EGESTAS.
-          </p>
-          <p>
-            LOREM IPSUM DOLOR SIT <br /> AMET, CONSECTETUR <br /> ADIPISCING
-            ELIT. NULLA
-            <br />
-            FACILISI. PELLENTESQUE <br /> HABITANT MORBI TRISTIQUE <br />{' '}
-            SENECTUS ET NETUS ET
-            <br />
-            MALESUADA FAMES AC <br />
-            TURPIS EGESTAS.
+            {HomeContant.Bighand.description}
           </p>
         </div>
 
@@ -51,10 +35,9 @@ const BigHand = () => {
           />
         </div>
 
-        <div className="ml-[100px] -mt-40 w-full md:w-1/3 flex flex-col items-start md:items-end text-lg text-black font-bold uppercase space-y-6">
+        <div className="ml-[100px] -mt-40 w-full md:w-1/3 flex flex-col items-start md:items-end text-lg text-black font-bold uppercase space-y-6 max-w-[200px]">
           <p style={{ fontFamily: 'sofia sans' }}>
-            LOREM IPSUM DOLOR SIT <br /> AMET, CONSECTETUR <br /> ADIPISCING
-            ELIT.
+            {HomeContant.Bighand.descripton1}
           </p>
           <button className="bg-black text-white mr-20 px-6 py-2 text-xs uppercase tracking-wider">
             Reserve

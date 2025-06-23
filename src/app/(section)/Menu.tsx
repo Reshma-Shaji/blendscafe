@@ -1,34 +1,11 @@
 'use client';
+import { HomeContant } from '@/lib/Contants';
 import Image from 'next/image';
 
 const Menu = () => {
-  const menuItems = [
-    {
-      title: 'ROASTED LAMB RUMP',
-      description: 'Grilled lamb cutlets, pomegranate glaze, butternut squash',
-      price: '$25',
-    },
-    {
-      title: 'PAN SEARED SEA BASS',
-      description: 'Saffron and mussel’s broth, new potatoes, edamame beans',
-      price: '$38',
-    },
-    {
-      title: 'KING PRAWNS AND LOBSTER',
-      description: 'Creamy saffron, sauce Vierge',
-      price: '$38',
-    },
-    {
-      title: 'BEEF BURGER MEAL',
-      description: 'Classic Greek salad, barrel aged feta cheese, bread',
-      price: '$32',
-    },
-    {
-      title: 'ROASTED LAMB RUMP',
-      description: 'Grilled lamb cutlets, pomegranate glaze, butternut squash',
-      price: '$25',
-    },
-  ];
+  {
+    HomeContant.menu.menuItems;
+  }
 
   return (
     <section className="bg-[#fa559a] w-full h-full flex items-center justify-center px-4 py-12">
@@ -38,11 +15,11 @@ const Menu = () => {
             className="text-[32px] md:text-[50px] h-[100px] font-bold uppercase mb-10 text-[#fa559a]"
             style={{ fontFamily: 'sofia sans' }}
           >
-            MENU
+            {HomeContant.menu.title}
           </h2>
 
           <div className="space-y-10">
-            {menuItems.map((item, index) => (
+            {HomeContant.menu.menuItems.map((item, index) => (
               <div key={index} style={{ fontFamily: 'sans-serif' }}>
                 <div className="flex items-center justify-between">
                   <h3 className="text-lg md:text-xl md:font-extralight uppercase text-gray-800">

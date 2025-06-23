@@ -1,13 +1,14 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import { HomeContant } from '@/lib/Contants';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav
-      className="bg-transparent w-full px-4 py-6 md:px-8 lg:px-16 z-50 relative"
+      className="bg-transparent w-full px-4 py-20 md:px-8 lg:px-16 z-50 relative"
       style={{ fontFamily: 'sofia sans' }}
     >
       <div className="flex items-center justify-between">
@@ -20,10 +21,18 @@ const Navbar = () => {
         />
 
         <div className="hidden md:flex gap-20 font-bold text-sm text-gray-700 uppercase">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href={`${HomeContant.navbar.link1}`}>
+            {HomeContant.navbar.title1}
+          </a>
+          <a href={`${HomeContant.navbar.link2}`}>
+            {HomeContant.navbar.title2}
+          </a>
+          <a href={`${HomeContant.navbar.link3}`}>
+            {HomeContant.navbar.title3}
+          </a>
+          <a href={`${HomeContant.navbar.link4}`}>
+            {HomeContant.navbar.title4}
+          </a>
         </div>
 
         <div className="hidden md:block">

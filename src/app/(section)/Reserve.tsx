@@ -1,4 +1,5 @@
 'use client';
+import { HomeContant } from '@/lib/Contants';
 import Image from 'next/image';
 
 const Reserve = () => {
@@ -8,15 +9,11 @@ const Reserve = () => {
         className="flex flex-col items-center justify-center text-white w-full md:w-1/2 space-y-6"
         style={{ fontFamily: 'sofia sans' }}
       >
-        <h1 className="text-2xl md:text-6xl font-bold ">RESERVE</h1>
-        <h2 className="text-[24px] md:text-[30px] leading-snug text-center uppercase font-semibold text-white -mt-5">
-          Lorem <br />
-          ipsum dolor sit
-          <br /> amet, consectetur
-          <br /> adipiscing elit. Lorem <br />
-          ipsum dolor sit amet,
-          <br /> consectetur adipiscing <br />
-          elit.
+        <h1 className="text-2xl md:text-6xl font-bold ">
+          {HomeContant.reserve.title}
+        </h1>
+        <h2 className="text-[24px] md:text-[30px] leading-snug text-center uppercase font-semibold text-white -mt-5 max-w-[330px]">
+          {HomeContant.reserve.description}
         </h2>
 
         <button className="-mt-5 px-7 py-3 bg-black text-white font-semibold  hover:bg-gray-100 transition">

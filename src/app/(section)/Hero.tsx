@@ -15,6 +15,7 @@
 // };
 
 // export default Hero;
+import { HomeContant } from '@/lib/Contants';
 
 const Hero = () => {
   return (
@@ -23,7 +24,7 @@ const Hero = () => {
       style={{ fontFamily: 'sofia sans' }}
     >
       <h1 className="text-[60px] md:text-[100px] font-normal text-black leading-none">
-        CAFE
+        {HomeContant.hero.title}
       </h1>
 
       <p className="mt-6 text-sm md:text-lg text-black font-bold leading-relaxed uppercase text-left max-w-xs md:max-w-md">

@@ -1,4 +1,7 @@
 'use client';
+
+import { HomeContant } from '@/lib/Contants';
+
 import Image from 'next/image';
 import React from 'react';
 
@@ -16,14 +19,16 @@ const Footer = () => {
           alt="Logo"
           className="w-36 mb-4"
         />
-        <h2 className="font-normal text-lg mt-28">CONTACT</h2>
-        <h2 className="text-xl">
-          69-71 London Rd, Stockton
-          <br /> Heath, Warrington WA4 6SG,
-          <br /> United Kingdom
+        <h2 className="font-normal text-lg mt-28">
+          {HomeContant.footer.title1}
         </h2>
-        <h2 className="text-lg">01925 269369</h2>
-        <h2 className="text-xl">info@zaloscafe.co.uk</h2>
+        <a href={`${HomeContant.footer.addresshref}`}>
+          <h2 className="text-xl">{HomeContant.footer.address}</h2>
+        </a>
+        <h2 className="text-lg">{`${HomeContant.footer.phone}`}</h2>
+        <a href={`${HomeContant.footer.email}`}>
+          <h2 className="text-xl uppercase">info@zaloscafe.co.uk</h2>
+        </a>
       </div>
 
       <div className="space-y-7 mt-36 pl-20">
@@ -35,19 +40,21 @@ const Footer = () => {
       </div>
 
       <div className="space-y-10 mt-20 pr-28">
-        <h2 className="font-normal text-lg mb-2 ">Opening Hours</h2>
+        <h2 className="font-normal text-lg mb-2 ">
+          {HomeContant.footer.title2}
+        </h2>
 
         <div className="flex justify-between border-b pb-1 mt-10">
-          <h2>Tuesday - Thursday</h2>
-          <h2>8 AM - 11 PM</h2>
+          <h2>{HomeContant.workingdays.day1}</h2>
+          <h2>{HomeContant.workingstime.time1}</h2>
         </div>
         <div className="flex justify-between border-b pb-1">
-          <h2>Friday - Saturday</h2>
-          <h2>9 AM - 11 PM</h2>
+          <h2>{HomeContant.workingdays.day2}</h2>
+          <h2>{HomeContant.workingstime.time2}</h2>
         </div>
         <div className="flex justify-between border-b pb-1">
-          <h2>Sunday</h2>
-          <h2>9 AM - 10 PM</h2>
+          <h2>{HomeContant.workingdays.day3}</h2>
+          <h2>{HomeContant.workingstime.time3}</h2>
         </div>
       </div>
     </div>
