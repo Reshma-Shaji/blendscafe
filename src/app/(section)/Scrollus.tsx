@@ -16,7 +16,7 @@ const Scrollus = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative w-full h-[300px] overflow-hidden rounded-lg shadow-md">
             <Image
-              src="image.webp"
+              src="/image.webp"
               width={300}
               height={400}
               alt="Image 1"
@@ -29,7 +29,7 @@ const Scrollus = () => {
 
           <div className="w-full h-[300px] overflow-hidden rounded-lg shadow-md">
             <Image
-              src="1.webp"
+              src="/1.webp"
               width={300}
               height={400}
               alt="Image 2"
@@ -54,7 +54,7 @@ const Scrollus = () => {
               className="h-6 w-6 mb-2"
               width={300}
               height={400}
-              src="insta.jpg"
+              src="/insta.jpg"
               alt="Instagram"
             />
             <h1 className="text-lg font-semibold">@LOREMIPSUM</h1>
@@ -62,7 +62,7 @@ const Scrollus = () => {
 
           <div className="relative w-full h-[300px] overflow-hidden rounded-lg shadow-md">
             <Image
-              src="1 (1).webp"
+              src="/1 (1).webp"
               width={300}
               height={400}
               alt="Image 3"
@@ -75,7 +75,7 @@ const Scrollus = () => {
 
           <div className="relative w-full h-[300px] overflow-hidden rounded-lg shadow-md">
             <Image
-              src="image.webp"
+              src="/image.webp"
               width={300}
               height={400}
               alt="Image 4"

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const BigHand = () => {
   return (
-    <section className="relative mt-16 w-full h-screen bg-white overflow-hidden flex items-center justify-center px-4 md:px-16">
+    <section className="relative w-full h-screen bg-white overflow-hidden flex items-center justify-center px-4 md:px-16">
       <h1
         className="absolute top-1/2 left-[900px] -mt-6 -translate-x-1/2 -translate-y-1/2 text-[80px] md:text-[150px] lg:text-[260px] font-medium tracking-tighter text-black uppercase z-0 text-center leading-none"
         style={{ fontFamily: 'sofia sans' }}

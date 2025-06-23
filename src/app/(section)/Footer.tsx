@@ -10,7 +10,7 @@ const Footer = () => {
     >
       <div className="space-y-10 -mt-[20px]">
         <Image
-          src="logo.webp"
+          src="/logo.webp"
           width={300}
           height={400}
           alt="Logo"

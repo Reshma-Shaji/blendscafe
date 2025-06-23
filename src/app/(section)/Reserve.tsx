@@ -26,7 +26,7 @@ const Reserve = () => {
 
       <div className="w-full md:w-1/2 h-[100vh] flex justify-between items-end ml-[40px]">
         <Image
-          src="image.webp"
+          src="/image.webp"
           width={300}
           height={400}
           alt="Cafe"
